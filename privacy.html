@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — backup-tyr</title>
+<style>
+  :root { --bg:#fbfbfa; --fg:#1a1a18; --muted:#6b6b66; --line:#e3e3df; --accent:#3b5bdb; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg:#15151a; --fg:#ececea; --muted:#9a9a94; --line:#2c2c33; --accent:#8fa6f5; } }
+  :root[data-theme="dark"] { --bg:#15151a; --fg:#ececea; --muted:#9a9a94; --line:#2c2c33; --accent:#8fa6f5; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:4rem 16px; }
+  h1 { font-size:1.7rem; margin:0 0 .3rem; letter-spacing:-.02em }
+  .sub { color:var(--muted); margin:0 0 2.5rem }
+  h2 { font-size:1.05rem; margin:2.2rem 0 .6rem }
+  p { margin:.6rem 0 }
+  code { background:var(--line); padding:.12em .4em; border-radius:4px; font-size:.9em }
+  a { color:var(--accent) }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem }
+</style>
+</head>
+<body><main>
+  <h1>Política de Privacidade</h1>
+  <p class="sub">backup-tyr · atualizada em 10 de outubro de 2026</p>
+
+  <h2>Resumo</h2>
+  <p>Este aplicativo é de uso pessoal e exclusivo do autor. Não coleta, não armazena e não
+  transmite dados de terceiros.</p>
+
+  <h2>Dados acessados</h2>
+  <p>O aplicativo acessa o Google Drive do próprio autor por meio do escopo
+  <code>https://www.googleapis.com/auth/drive.file</code>, que concede acesso somente aos arquivos
+  criados pelo próprio aplicativo. Ele não lê, modifica nem acessa quaisquer outros arquivos da
+  conta.</p>
+
+  <h2>Dados enviados</h2>
+  <p>São enviados exclusivamente blocos de dados de backup cifrados pelo restic com AES-256.
+  Nomes de arquivo, estrutura de diretórios e conteúdo estão cifrados: sem a chave, que é mantida
+  apenas localmente pelo autor e nunca transmitida, o conteúdo é ilegível — inclusive para o
+  provedor de armazenamento.</p>
+
+  <h2>Compartilhamento</h2>
+  <p>Nenhum dado é compartilhado, vendido ou transferido a terceiros. Não há analytics, nem
+  rastreamento, nem servidores intermediários: a transferência ocorre diretamente entre o
+  computador do autor e a API do Google.</p>
+
+  <h2>Retenção e remoção</h2>
+  <p>Os arquivos permanecem no Google Drive do autor enquanto ele os mantiver, e podem ser
+  removidos por ele a qualquer momento. A autorização de acesso pode ser revogada a qualquer
+  momento em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Contato</h2>
+  <p>edu.oda@gmail.com</p>
+
+  <footer><a href="index.html">Voltar</a></footer>
+</main></body></html>

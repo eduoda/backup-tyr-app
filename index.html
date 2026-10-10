@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>backup-tyr</title>
+<style>
+  :root { --bg:#fbfbfa; --fg:#1a1a18; --muted:#6b6b66; --line:#e3e3df; --accent:#3b5bdb; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg:#15151a; --fg:#ececea; --muted:#9a9a94; --line:#2c2c33; --accent:#8fa6f5; } }
+  :root[data-theme="dark"] { --bg:#15151a; --fg:#ececea; --muted:#9a9a94; --line:#2c2c33; --accent:#8fa6f5; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:4rem 16px; }
+  h1 { font-size:1.9rem; margin:0 0 .3rem; letter-spacing:-.02em }
+  .sub { color:var(--muted); margin:0 0 2.5rem }
+  h2 { font-size:1.05rem; margin:2.2rem 0 .6rem; }
+  p { margin:.6rem 0 }
+  code { background:var(--line); padding:.12em .4em; border-radius:4px; font-size:.9em }
+  a { color:var(--accent) }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem }
+</style>
+</head>
+<body><main>
+  <h1>backup-tyr</h1>
+  <p class="sub">Ferramenta pessoal de backup.</p>
+
+  <p>Sincroniza um repositório <a href="https://restic.net/">restic</a> já cifrado para o Google Drive
+  do próprio autor, usando <a href="https://rclone.org/">rclone</a>. É uma cópia secundária: o
+  repositório primário fica em object storage.</p>
+
+  <h2>Uso</h2>
+  <p>Aplicativo de uso pessoal e exclusivo do autor. Não há outros usuários, não há cadastro
+  e não há interface para terceiros.</p>
+
+  <h2>Acesso ao Google Drive</h2>
+  <p>Usa apenas o escopo <code>drive.file</code>, que limita o acesso aos arquivos criados pelo
+  próprio aplicativo. Documentos, fotos e demais arquivos da conta permanecem inacessíveis a ele.</p>
+
+  <h2>Conteúdo enviado</h2>
+  <p>Apenas blocos de dados cifrados pelo restic (AES-256). Nomes de arquivo, estrutura de
+  diretórios e conteúdo são opacos no destino: sem a chave, mantida localmente, nada é legível.</p>
+
+  <footer>
+    <a href="privacy.html">Política de privacidade</a> · contato: edu.oda@gmail.com
+  </footer>
+</main></body></html>
